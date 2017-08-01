@@ -1,0 +1,153 @@
+
+
+1. pwd
+-------
+
+[acadgild@localhost ~]$ pwd
+/home/acadgild
+[acadgild@localhost ~]$ 
+
+2. vi
+------
+Editor used to edit a text file.
+Command to create a new file/or edit the file that is existing
+e.g. vi test.txt
+creates a new file test.txt or loads it for editing if its already existing.
+
+
+
+3. touch
+---------
+[acadgild@localhost ~]$ touch new.txt
+[acadgild@localhost ~]$ ls new.*
+new.txt
+[acadgild@localhost ~]$ 
+
+4. mkdir
+--------
+[acadgild@localhost temp]$ ls
+[acadgild@localhost temp]$ ls -al
+total 8
+drwxrwxr-x.  2 acadgild acadgild 4096 Jul 31 21:58 .
+drwx------. 41 acadgild acadgild 4096 Jul 31 21:58 ..
+[acadgild@localhost temp]$ mkdir testdir
+[acadgild@localhost temp]$ ls -al
+total 12
+drwxrwxr-x.  3 acadgild acadgild 4096 Jul 31 21:59 .
+drwx------. 41 acadgild acadgild 4096 Jul 31 21:58 ..
+drwxrwxr-x.  2 acadgild acadgild 4096 Jul 31 21:59 testdir
+[acadgild@localhost temp]$
+
+5. rm
+------
+[acadgild@localhost temp]$ ls -al
+total 12
+drwxrwxr-x.  3 acadgild acadgild 4096 Jul 31 22:00 .
+drwx------. 41 acadgild acadgild 4096 Jul 31 21:58 ..
+-rw-rw-r--.  1 acadgild acadgild    0 Jul 31 22:00 new.txt
+drwxrwxr-x.  2 acadgild acadgild 4096 Jul 31 21:59 testdir
+[acadgild@localhost temp]$ rm new.txt 
+[acadgild@localhost temp]$ ls -al
+total 12
+drwxrwxr-x.  3 acadgild acadgild 4096 Jul 31 22:01 .
+drwx------. 41 acadgild acadgild 4096 Jul 31 21:58 ..
+drwxrwxr-x.  2 acadgild acadgild 4096 Jul 31 21:59 testdir
+[acadgild@localhost temp]$ 
+
+6. ls
+-----
+List the content of a directory.
+
+7. Echo
+Take input from keyboard and display it on screen. Also used to print values of environment variable typically in a shell script.
+
+8. cat:
+-------
+Display content of a file on screen,
+
+[acadgild@localhost ~]$ cat test.txt 
+this is test file created using vi editor
+save and exit - [esc]:wq
+[acadgild@localhost ~]$ 
+
+9. who:
+-------
+
+Displays the name of the user currently logged in to the system.
+
+[acadgild@localhost ~]$ who
+acadgild tty1         2017-07-31 21:37 (:0)
+acadgild pts/0        2017-07-31 21:40 (:0.0)
+[acadgild@localhost ~]$ 
+[acadgild@localhost ~]$ who am i
+acadgild pts/0        2017-07-31 21:40 (:0.0)
+[acadgild@localhost ~]$ 
+
+10. cd
+-------
+To change the current working directory. If no arguement is given the directory is changed to the user's home directory.
+
+[acadgild@localhost temp]$ pwd
+/home/acadgild/temp
+[acadgild@localhost temp]$ cd
+[acadgild@localhost ~]$ pwd
+/home/acadgild
+[acadgild@localhost ~]$ cd temp
+[acadgild@localhost temp]$ pwd
+/home/acadgild/temp
+[acadgild@localhost temp]$ 
+
+11. date
+--------
+Display the current date and time:
+
+[acadgild@localhost temp]$ date
+Mon Jul 31 22:17:43 IST 2017
+[acadgild@localhost temp]$ 
+
+12. cal
+-------
+Display the calendar of current month.
+
+[acadgild@localhost temp]$ cal
+      July 2017     
+Su Mo Tu We Th Fr Sa
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31
+[acadgild@localhost temp]$ 
+
+13. mv:
+-------
+Used to move a file from one directory to a different directory
+
+[acadgild@localhost ~]$ mv test.txt temp/testdir/
+[acadgild@localhost ~]$ cd temp/testdir/
+[acadgild@localhost testdir]$ ls
+test.txt
+[acadgild@localhost testdir]$
+
+
+14. cp:
+-------
+Copies a file to the location mentioned in the command
+
+[acadgild@localhost ~]$ cp test.txt temp/testdir/
+[acadgild@localhost ~]$ cd temp/testdir/
+[acadgild@localhost testdir]$ ls
+test.txt
+[acadgild@localhost testdir]$ 
+
+15. which
+----------
+Used to locate a program on the disc
+
+[acadgild@localhost testdir]$ which java
+/usr/local/java/bin/java
+[acadgild@localhost testdir]$ 
+
+
+
